@@ -1,3 +1,5 @@
+package org.example;
+
 import java.awt.*;
 
 public class House {
@@ -49,25 +51,28 @@ public class House {
         Point doorKnobP2 = new Point(740, 490);
 
         Color color = new Color(0, 0 , 255);
+        Color colorBlack = new Color(31, 32, 35);
+        Color smokeColor = new Color(83, 71, 72, 205);
+        Color redColor = new Color(189, 11, 26, 205);
 
-        Roof.paint(roofPoint, 500, 250, color, g);
+        Roof.paint(roofPoint, 500, 250, colorBlack, g);
 
-        Roof.paintChimney(chimneyLeftLinePoint1, chimneyLeftLinePoint2, color, g);
-        Roof.paintChimney(chimneyTopLinePoint1, chimneyTopLinePoint2, color, g);
-        Roof.paintChimney(chimneyRightLinePoint1, chimneyRightLinePoint2, color, g);
-        Roof.paintChimneySmoke(smoke1Point1, smoke1Point2, color, g);
-        Roof.paintChimneySmoke(smoke2Point1, smoke2Point2, color, g);
-        Roof.paintChimneySmoke(smoke3Point1, smoke3Point2, color, g);
+        Roof.paintChimney(chimneyLeftLinePoint1, chimneyLeftLinePoint2, redColor, g);
+        Roof.paintChimney(chimneyTopLinePoint1, chimneyTopLinePoint2, redColor, g);
+        Roof.paintChimney(chimneyRightLinePoint1, chimneyRightLinePoint2, redColor, g);
+        Roof.paintChimneySmoke(smoke1Point1, smoke1Point2, smokeColor, g);
+        Roof.paintChimneySmoke(smoke2Point1, smoke2Point2, smokeColor, g);
+        Roof.paintChimneySmoke(smoke3Point1, smoke3Point2, smokeColor, g);
 
-        HouseFrame.paint(houseFramePoint1, houseFramePoint2, color, g);
+        HouseFrame.paint(houseFramePoint1, houseFramePoint2, colorBlack, g);
 
-        Window.paint(topLeftWindowP1, topLeftWindowP2, color, g);
-        Window.paint(topRightWindowP1, topRightWindowP2, color, g);
-        Window.paint(bottomLeftWindowP1, bottomLeftWindowP2, color, g);
-        Window.paint(bottomRightWindowP1, bottomRightWindowP2, color, g);
-        Window.paintRoundWindow(roundWindowP1, roundWindowP2, color, g);
+        Window.paint(topLeftWindowP1, topLeftWindowP2, colorBlack, g);
+        Window.paint(topRightWindowP1, topRightWindowP2, colorBlack, g);
+        Window.paint(bottomLeftWindowP1, bottomLeftWindowP2, colorBlack, g);
+        Window.paint(bottomRightWindowP1, bottomRightWindowP2, colorBlack, g);
+        Window.paintRoundWindow(roundWindowP1, roundWindowP2, redColor, g);
 
-        Door.paint(doorP1, doorP2, color, g );
-        Door.paintDoorKnob(doorKnobP1, doorKnobP2, color, g);
+        Door.paint(doorP1, doorP2, redColor, g );
+        Door.paintDoorKnob(doorKnobP1, doorKnobP2, colorBlack, g);
     }
 }

@@ -1,3 +1,5 @@
+package org.example;
+
 import java.awt.*;
 public class Window {
     public static void paint(Point point1, Point point2, Color color, Graphics g)

@@ -1,4 +1,4 @@
-import java.awt.*;
+package org.example;
 
 public class Picture {
     private Scenery scenery;

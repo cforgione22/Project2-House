@@ -1,11 +1,11 @@
+package org.example;
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
@@ -23,17 +23,18 @@ public class FramedPortrait extends JFrame {
        @Override
         public void mousePressed(MouseEvent e) {
 
-            House.paint(scene.getGraphics());
-            Scenery.paint(scene.getGraphics());
+           House.paint(scene.getGraphics());
+           Scenery.paint(scene.getGraphics());
+
+
+
+
         }
 
     }
 
     class MyKeyListener extends KeyAdapter {
-        @Override
-        public void keyPressed(KeyEvent e) {
-            JOptionPane.showMessageDialog(null, "Hello key-click");
-        }
+
     }
 
     public  FramedPortrait() {
@@ -41,10 +42,6 @@ public class FramedPortrait extends JFrame {
         MouseAdapter listener = new MouseListener();
         scene.addMouseListener(listener);
         scene.addMouseMotionListener(listener);
-
-        KeyAdapter keyListener = new MyKeyListener();
-        scene.addKeyListener(keyListener);
-        scene.setFocusable(true);
 
         JLabel keyGuide = new JLabel();
         keyGuide.setText("Crystal Forgione");

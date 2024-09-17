@@ -1,3 +1,5 @@
+package org.example;
+
 import java.awt.*;
 
 public class Scenery {
@@ -26,6 +28,7 @@ public class Scenery {
         Point bottomOfRightTreeP2 = new Point(1120, 600);
 
         Color BottomOfTreeColor = new Color(74, 43, 6, 255);
+
 
 
 //        Sky.paint();

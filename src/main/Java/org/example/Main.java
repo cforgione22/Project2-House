@@ -1,3 +1,5 @@
+import org.example.FramedPortrait;
+
 import javax.swing.JFrame;
 
 public static void main (String[] args) {
